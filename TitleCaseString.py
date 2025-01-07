@@ -11,8 +11,11 @@ for i in range(n):
     my_string_list[i] = my_string_list[i].upper()
   elif my_string_list[i] == " ":
     my_string_list[i+1] = my_string_list[i+1].upper()
+  elif my_string_list[i-1] == " ":
+    pass  
   else:
-    pass
+    my_string_list[i] = my_string_list[i].lower()
+    
 
 for e in my_string_list:
   my_string_titleCase = my_string_titleCase+e
